@@ -1,0 +1,46 @@
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
+
+
+
+public class Calculator {
+
+	public Calculator() {
+		
+		JFrame jf=new JFrame("Calculator");
+		jf.setSize(600,600);
+		jf.setLayout(null);
+	
+		jf.setLocation(300, 150);
+		
+		JLabel displayLabel=new JLabel("HEllo");
+		displayLabel.setBounds(30,20, 540, 40);
+		displayLabel.setOpaque(true);
+		displayLabel.setHorizontalAlignment(SwingConstants.RIGHT);
+		displayLabel.setBackground(Color.black);
+		displayLabel.setForeground(Color.white);
+		jf.add(displayLabel);
+		
+		jf.setVisible(true);
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		JButton sevenButton=new JButton("7");
+		sevenButton.setBounds(30,130, 80, 80);
+		jf.add(sevenButton);
+		
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+	  Calculator c=new Calculator();
+	}
+	
+}

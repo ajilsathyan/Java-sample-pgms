@@ -1,0 +1,24 @@
+import javax.swing.JFrame;
+
+public class Calculator {
+
+	public Calculator() {
+		
+		JFrame jf=new JFrame("Calculator");
+		jf.setSize(500,500);
+		jf.setLayout(null);
+		jf.setLocation(200, 200);
+		
+		
+		
+		jf.setVisible(true);
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	public static void main(String[] args) {
+		
+		
+	  Calculator c=new Calculator();
+	}
+	
+}

@@ -1,0 +1,14 @@
+package sample;
+
+public class multiplication {
+	public static void main(String arg[]) {
+		
+		int num1=20;
+		int num2=30;
+		int result=num1*num2;
+		 
+		System.out.println("Resuslt is "+ result);
+	}
+	
+
+}

@@ -1,0 +1,113 @@
+package Student;
+import java.util.Scanner;
+
+public class Main {
+   
+	public static void main(String args[]) {
+		
+		Bikes b1 = new Bikes();
+		Bikes b2 = new Bikes();
+		Bikes b3 = new Bikes();
+		Bikes b4 = new Bikes();
+		Bikes b5 = new Bikes();
+		
+		Cars  c1  = new Cars();
+		Cars  c2  = new Cars();
+		Cars  c3  = new Cars();
+		Cars  c4  = new Cars();
+		Cars  c5  = new Cars();
+		
+		
+		//Class( Cars ) object( c1,c2,c3,c4, c5..)  cars Naming
+		c1.name = "Lamborghini";
+		c2.name = "Ferrari";
+		c3.name = "Buggati";
+		c4.name = "BMW";
+		c5.name = "Pagani";
+		
+		//Class( Cars ) object( c1,c2,c3,c4, c5..)  Cars cost Declaration
+		c1.cost = "$ 8,130,0000";
+		c2.cost = "$ 9,140,0000";
+		c3.cost = "$ 7,220,0000";
+		c4.cost = "$ 4,120,0000";
+		c5.cost = "$ 3,100,0000";
+		
+		
+		//Class( Bikes ) object( b1,b2,b3,b4, b5..)  bikes Naming
+		b1.name = "Harley Davidson";
+		b2.name = "Ducati";
+		b3.name = "Ninja H2R";
+		b4.name = "Suzuki";
+		b5.name = "Yamaha";
+		
+		//Class( Bikes ) object( b1,b2,b3,b4, b5..)  Bikes cost Declaration
+		b1.cost = "$200,000";
+		b1.cost = "$300,000";
+		b1.cost = "$800,000";
+		b1.cost = "$120,000";
+		b1.cost = "$500,000";
+		
+		System.out.println("What do u want to buy?");
+		System.out.println("1.Bikes");
+		System.out.println("2.Cars");
+		
+		
+		System.out.println("Enter your choice : ");
+		Scanner s = new Scanner(System.in);
+	
+		int choice = s.nextInt();
+		if(choice==1) {
+			System.out.println("We have 5 models");
+			System.out.println("1.Harley Davidson");
+			System.out.println("2.Ducati");
+			System.out.println("3.Ninja H2R");
+			System.out.println("4.Suzuki");
+			System.out.println("5.Yamaha");
+			System.out.println("Enter Your choice");
+			
+			int n;
+			n=s.nextInt();
+			if(n==1) {
+				System.out.println("Harley Davidson"+"Price:"+b1.cost);
+			}else if(n==2) {
+				System.out.println("Ducati"+"Price:"+b2.cost);
+			}else if(n==3) {
+				System.out.println("Ninja H2R"+"Price:"+b3.cost);
+			}else if(n==4){
+				System.out.println("Suzuki"+"Price:"+b4.cost);
+			}else if(n==5) {
+				System.out.println("Yamaha"+"Price:"+b5.cost);
+			}else {
+				System.out.println("please enter Your choices between 1-5");
+			}
+			
+		}else if(choice==2) {
+			System.out.println("We have 5 models");
+			System.out.println(1 + c1.name);
+			System.out.println(2 + c2.name);
+			System.out.println(3 + c3.name);
+			System.out.println(4 + c4.name);
+			System.out.println(5 + c5.name);
+			System.out.println("Enter Your choice");
+			
+			int n;
+			n=s.nextInt();
+			if(n==1) {
+				System.out.println("Harley Davidson"+"Price:"+c1.cost);
+			}else if(n==2) {
+				System.out.println("Ducati"+"Price:"+c2.cost);
+			}else if(n==3) {
+				System.out.println("Ninja H2R"+"Price:"+c3.cost);
+			}else if(n==4){
+				System.out.println("Suzuki"+"Price:"+c4.cost);
+			}else if(n==5) {
+				System.out.println("Yamaha"+"Price:"+c5.cost);
+			}else {
+				System.out.println("please enter Your choices between 1-5");
+			}
+		}else {
+			
+			System.out.println("Please Enter choices between 1-2");
+		}
+	}
+}

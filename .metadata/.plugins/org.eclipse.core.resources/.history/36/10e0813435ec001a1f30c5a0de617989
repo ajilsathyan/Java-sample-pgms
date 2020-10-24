@@ -1,0 +1,20 @@
+import javax.swing.JFrame;
+
+public class Calculator {
+
+	public Calculator() {
+		
+		JFrame jf=new JFrame("Calculator");
+		jf.setSize(500,500);
+		jf.setLayout(null);
+		jf.setVisible(true);
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+	  Calculator c=new Calculator();
+	}
+	
+}
